@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<section id="teams">
+</section>
+
+<section id="addingWords">
+	<p><span>Add your word here, please!</span>
+		<input type="text" id="addWords" name="inputBox">
+		<button id="addWord">Add Word</button>
+	</p>
+</section>
+
+<section id="checkingPlayer">Is this a new Player?
+	<button id="yes">Yes!</button>
+	<button id="no" disabled="true">Next step</button>
+</section>
+
+<section id="playerSection">
+	<p id="contestant"></p> <!--ToDo Acest paragraf se va completa dupa evenimentul click pe START. ATENTIE!! SA NU SUPRASCRIEM FUNCTIILE-->
+	<p>You have <span id="timer">XX</span> seconds left!</p>
+	<p id="word">cuvantul de ghicit</p>
+	<button id="start">START</button>
+	<button id="next" disabled="true">NEXT</button>
+	<button id="failed" disabled="true">Next Player</button>
+</section>
+
+<section id="result">
+	<p>The winner of the game is <span id="displayWinner"></span> with a total of <span id="displayTotalScore"></span> words</p>
+	<p>The detaild results are as fallows</p>
+	<ul>
+		<li>
+			<span id="firstRoundWinner"></span> words in first round
+		</li>
+		<li>
+			<span id="secondRoundWinner"></span> words in second round
+		</li>
+		<li>
+			<span id="lastRoundWinner"></span> words in the last round
+		</li>
+	</ul>
+
+	<p>The other team of the game,  <span id="displaySecond"></span> with a total of <span id="displayTotalScoreSecond"></span> words</p>
+	<p>The detaild results are as fallows</p>
+	<ul>
+		<li>
+			<span id="firstRoundSecond"></span> words in first round
+		</li>
+		<li>
+			<span id="secondRoundSecond"></span> words in second round
+		</li>
+		<li>
+			<span id="lastRoundSecond"></span> words in the last round
+		</li>
+	</ul>
+	
+</section>
+
+<script type="text/javascript" src="dynamic.js"></script>
+</body>
+</html>

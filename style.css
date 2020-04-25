@@ -1,0 +1,46 @@
+#playerSection {
+	visibility: hidden;
+}
+
+#next {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+#failed {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+ #addingWords {
+ 	visibility: visible;
+ }
+
+ #checkingPlayer {
+ 	visibility: hidden;
+ }
+
+ #timer {
+ 	font-style: bold;
+ 	font-size: 30px;
+ }
+
+ #no {
+ 	opacity = 0.6;
+	cursor = not-allowed;
+ }
+
+ #word {
+ 	font-size: 50px;
+ 	font-style: bold;
+ 	color: red;
+ 	text-shadow:2px 0px black;
+ }
+
+ #teams {
+ 	visibility: hidden;
+ }
+
+ #result {
+ 	visibility: hidden;
+ }
