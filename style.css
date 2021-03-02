@@ -1,5 +1,14 @@
+body {
+	background-image: url("smile.jpg");
+	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
 #playerSection {
-	visibility: hidden;
+	display: none;
+	margin-left: 20%;
+ 	font-size: 2vw;
+
 }
 
 #next {
@@ -13,11 +22,17 @@
 }
 
  #addingWords {
- 	visibility: visible;
+ 	display: none;
+ 	margin-left: 20%;
+ 	font-size: 2vw;
+ 	
  }
 
  #checkingPlayer {
- 	visibility: hidden;
+ 	display: none;
+ 	margin-left: 20%;
+ 	font-size: 2vw;
+ 	
  }
 
  #timer {
@@ -26,8 +41,8 @@
  }
 
  #no {
- 	opacity = 0.6;
-	cursor = not-allowed;
+ 	opacity : 0.6;
+	cursor :not-allowed;
  }
 
  #word {
@@ -38,9 +53,22 @@
  }
 
  #teams {
- 	visibility: hidden;
+ 	display: none;
+ 	margin-left: 20%;
+ 	font-size: 2vw;
+ 	
  }
 
  #result {
- 	visibility: hidden;
+ 	display: none;
+ 	margin-left: 20%;
+ 	font-size: 2vw;
+
+ }
+
+  #contestant {
+ 	font-size: 50px;
+ 	font-style: bold;
+ 	color: red;
+ 	text-shadow:2px 0px black;
  }
