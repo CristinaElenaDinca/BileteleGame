@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="JQ2.js"></script>
+	<script src="https://kit.fontawesome.com/44ac4619fc.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">-->
+  <!--	<link rel="stylesheet" href="/resources/demos/style.css">-->
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+<section id="teaser">
+	<div class="jumbotron">
+		<div class="container">
+			<h1 id="introTitle"class="display-4">The Tickets Game</h1>
+			<div class="space"></div>
+			<div class="space"></div>
+			<div class="space"></div>
+			<p class="lead">When you have a day out with friends, take a run with this Tickets Game. It's an alternative to the classic board game.</p>
+			<hr class="my-4">
+			<div class="space"></div>
+			<div class="space"></div>
+			<p class=" lead"> Let's get familiar with the rules! </p>
+			<div class="space"></div>
+			<ol class="bg-transparent lead" id="intro">
+				<li class="bg-transparent">This is a game ment to be played with your friends. It's a team game so you would need at least 4 friends to play one game (there is no maximum limit. The more the merrier).</li>
+				<li class="bg-transparent">Every player from each team will take turns (1 from team A, 1 from team B, 2nd from team A, 2nd from team B a.s.o.).</li>
+				<li class="bg-transparent">You would need a laptop/tablet and each player will take turn as the game shows on screen.</li>
+				<li class="bg-transparent">You will have 20 seconds. Get your team to guess as many words as possible in 20 seconds. The team with as many words guessed will be the winner.</li>
+				<li class="bg-transparent">REMEMBER: when you are up, you are the only one allowed to see the screen and only your team can guess!</li>
+			</ol>
+			<div class="space"></div>
+			<div class="space"></div>
+			<div class="space"></div>
+			<button id="teaserBtn" class="btn btn-warning">Let the game begin!</button>
+		
+		</div>
+	  </div>
+</section>
+
+<section  class="container bg-transparent" id="teams">
+	<p class="text-center h3">Here are the teams!
+		<i class="fa-solid fa-face-laugh-beam fa-bounce"></i>
+		<i class="fa-solid fa-hand-peace fa-bounce "></i>
+		<i class="fa-solid fa-face-smile-wink fa-beat"></i>
+		<i class="fa-solid fa-thumbs-up fa-beat"></i>
+	</p>
+	<div class="container bg-transparent h5 "id="teams2"></div>
+	<div class="space"></div>
+	<div class="container bg-transparent">
+		<p class="text-center h3"><i class="fa-solid fa-glasses fa-beat"></i> Let's remember the rules! <i class="fa-solid fa-glasses fa-beat"></i></p>
+		<ol class="list-group list-group-numbered bg-transparent h6">
+			<li class="list-group-item bg-transparent">This is a game ment to be played with your friends. It's a team game so you would need at least 4 friends to play one game (there is no maximum limit. The more the merrier).</li>
+			<li class="list-group-item bg-transparent">Every player from each team will take turns (1 from team A, 1 from team B, 2nd from team A, 2nd from team B a.s.o.).</li>
+			<li class="list-group-item bg-transparent">You would need a laptop/tablet and each player will take turn as the game shows on screen.</li>
+			<li class="list-group-item bg-transparent">You will have 20 seconds. Get your team to guess as many words as possible in 20 seconds. The team with as many words guessed will be the winner.</li>
+			<li class="list-group-item bg-transparent">REMEMBER: when you are up, you are the only one allowed to see the screen and only your team can guess!</li>
+		</ol>
+	</div>
+</section>
+<div class="space"></div>
+<section class = "container invisible" id="addingWords">
+	<p id="addWordsSpan"><span class="h3">Add your word here, please! </span>
+		<i class="fa-solid fa-circle-right fa-bounce"></i>
+		<input type="text" id="addWords" name="inputBox">
+		<i class="fa-solid fa-circle-left fa-beat"></i>
+	</p>
+</section>
+
+<section class="container" id="checkingPlayer">Is this a new player?
+	<button id="yes" class="btn btn-warning" >Yes!</button>
+	<button id="no" class="btn btn-warning" disabled="true">Next step</button>
+</section>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<section class="container" id="playerSection">
+	<p id="contestant"></p> 
+	<p>You have <span id="timer">XX</span> seconds left!</p>
+	<p id="word">your word will be displayed here</p>
+	<button id="start" class="btn btn-success">START</button>
+	<button id="next" class="btn btn-info" disabled="true">NEXT</button>
+	<button id="failed" class=" btn btn-warning"disabled="true">Next Player</button>
+</section>
+
+<section class="container" id="result">
+	<div class="space"></div>
+	<div class="space"></div>
+	<div class="space"></div>
+	
+	
+	<h3><i class="fa-solid fa-face-laugh-beam fa-bounce"></i> The winner of the game is "<span id="displayWinner"></span>"  with a total of <span id="displayTotalScore"></span> words</h3>
+	<div class="space"></div>
+	
+	<div class="container">
+		<p>The detaild results are as fallowing</p>
+		<ul>
+			<li>
+				<span id="firstRoundWinner"></span> words in first round
+			</li>
+			<li>
+				<span id="secondRoundWinner"></span> words in second round
+			</li>
+			<li>
+				<span id="lastRoundWinner"></span> words in the last round
+			</li>
+		</ul>
+
+		<div class="space"></div>
+		<h3><i class="fa-solid fa-face-laugh-beam fa-bounce "></i> The other team of the game, "<span  id="displaySecond"></span>" with a total of <span id="displayTotalScoreSecond"></span> words</h3>
+		<p>The detaild results are as fallowing:</p>
+		<ul>
+			<li>
+				<span id="firstRoundSecond"></span> words in first round
+			</li>
+			<li>
+				<span id="secondRoundSecond"></span> words in second round
+			</li>
+			<li>
+				<span id="lastRoundSecond"></span> words in the last round
+			</li>
+		</ul>
+	</div>	
+</section>
+
+<script type="text/javascript" src="dynamic.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

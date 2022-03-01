@@ -1,0 +1,142 @@
+
+button {
+	box-shadow:4px 4px 3px orange;
+}
+
+i, h3, .h3{
+	text-shadow: 4px 4px 5px orange;
+}
+
+.lead{
+	text-shadow: 1px 1px 3px orange;
+	font-weight:400;
+}
+
+#teaserBtn{
+	height: 50px;
+	width: 400px;
+	font-size:x-large;
+	text-shadow:4px 4px 5px black;
+	font-weight: bold;
+	float: right;
+	
+}
+
+#introTitle{
+	text-shadow: 3px 3px 3px orange;
+	text-decoration: solid;
+	font-weight: bold;
+}
+
+.begin {
+	background-image: url(smiley.jpg);
+	background-repeat: no-repeat;
+ 	background-size: cover;
+	text-size-adjust: 15px;
+}
+
+
+body {
+	font-family: my-font;
+}
+.end {
+	background-image: url(Winner.jpg);
+	background-repeat: no-repeat;
+ 	background-size: cover;
+		
+}
+
+
+#playerSection {
+	display: none;
+	margin-left: 20%;
+ 	font-size: 2vw;
+
+}
+#introduction {
+	width: 300px;
+	align-content: center;
+	text-size-adjust: auto;
+}
+
+.jumbotron{
+	background-image: url("begin.jpg");
+	height: 100vh;
+}
+
+#next {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+#failed {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+#addingWords{
+ justify-content: center;
+ height: 50px;
+ width: 100%;
+}
+
+#addWordsSpan{
+	float: right;
+}
+
+
+.invisible {
+ 	display: none;
+ 	margin-left: 20%;
+ 	font-size: 2vw;
+ 	
+ }
+
+ #checkingPlayer {
+ 	display: none;
+ 	margin-left: 20%;
+ 	font-size: 2vw;	
+ }
+
+ #timer {
+ 	font-style: bold;
+ 	font-size: 30px;
+ }
+
+ .space {
+	 height: 20px;
+ }
+
+ #no {
+ 	opacity : 0.6;
+	cursor :not-allowed;
+ }
+
+ #word {
+ 	font-size: 50px;
+ 	font-style: bold;
+ 	color: red;
+ 	text-shadow:2px 0px black;
+ }
+
+ #teams {
+	margin-top: 20px;
+ 	display: none;
+  	font-size: 2vw;
+ 	
+ }
+
+
+ #result {
+ 	display: none;
+ 	margin-left: 20%;
+ 	font-size: 2vw;
+
+ }
+
+  #contestant {
+ 	font-size: 50px;
+ 	font-style: bold;
+ 	color: red;
+ 	text-shadow:2px 0px black;
+ }
